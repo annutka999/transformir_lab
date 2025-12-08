@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: Neoform;
+  text-transform: uppercase;
+}
+header h1 {
+  font-size: 155px;
+  font-style: normal;
+  font-weight: 400;
+  color: #cf00cf;
+  text-align: center;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-text {
+  max-width: 60%;
+  color: #cf00cf;
+}
+.header-images img {
+  width: 548px;
+  height: 221px;
+  margin-left: 10px;
+}
+.step-content {
+  position: relative;
+}
+
+/* для номерации ступенек */
+.number {
+  position: absolute;
+  font-size: 75px;
+  font-family: Rammetto One;
+  font-weight: regular;
+  color: #cf00cf;
+}
+.step h2 {
+  color: #cf00cf;
+  font-size: 75px;
+}
+.start img {
+}
+footer {
+  color: #fff;
+}
