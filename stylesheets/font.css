@@ -1,12 +1,14 @@
 @font-face {
   font-family: "Neoform";
-  src: url(../fonts/Neoform.otf) format("otf");
+  src: url("../fonts/Neoform.woff") format("woff"),
+    url("../fonts/Neoform.otf") format("otf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Rammetto One";
-  src: url(../fonts/RammettoOne.ttf) format("ttf");
+  src: url("../fonts/RammettoOne.woff") format("woff"),
+    url("../fonts/RammettoOne.ttf") format("ttf");
   font-style: normal;
   font-weight: 400;
 }
