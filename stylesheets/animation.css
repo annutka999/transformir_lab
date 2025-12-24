@@ -1,0 +1,32 @@
+@keyframes marquee {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animateFrames {
+  0% {
+    opacity: 1;
+  } /* Первый кадр видим в начале */
+  20% {
+    opacity: 1;
+  } /* Затем он исчезает */
+  20.1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  } /* Остальные кадры остаются невидимыми */
+}
+
+@keyframes scrollFrames {
+  0% {
+    transform: translateX(0);
+  } /* Начало - первый кадр виден */
+  100% {
+    transform: translateX(calc(-1046px * 4));
+  } /* Конец - последний кадр слева */
+}

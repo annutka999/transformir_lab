@@ -8,44 +8,535 @@ body {
   text-transform: uppercase;
 }
 header h1 {
-  font-size: 155px;
+  font-size: 12.109vw;
   font-style: normal;
   font-weight: 400;
   color: #cf00cf;
   text-align: center;
 }
+/* main section,
+header {
+  border: 0.2vw solid white;
+} */
 .header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 2vw;
 }
-.header-text {
-  max-width: 60%;
+.character-first {
+  width: 8.906vw;
+}
+.header-images,
+.rectangle-1 {
+  width: 47.656vw;
+  height: 21.64vw;
+  border-width: 0.39vw;
+  outline-color: #cf00cf;
+  outline-style: solid;
+  border-radius: 0.3125vw;
+  z-index: -1;
+}
+.header-content p {
+  max-width: 100%;
+  margin: 1.406vw 1.875vw 1.484vw 1.875vw;
+  font-size: 1.875vw;
+  line-height: 2.343vw;
   color: #cf00cf;
 }
 .header-images img {
-  width: 548px;
-  height: 221px;
-  margin-left: 10px;
+  width: 42.8125vw;
+  height: 17.2656vw;
+  margin: 0 auto;
+  position: relative;
+  top: 2.031vw;
+  left: 2.343vw;
+}
+h2,
+h3,
+h4 {
+  font-size: 5.859vw;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+}
+.start img {
+  width: 24.195vw;
+  height: 13.647vw;
+}
+.stars-first {
+  width: 20.3125vw;
+}
+.step-1 {
+  display: flex;
+}
+.step-1 > div {
+  width: 50%;
+}
+.step-1-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 .step-content {
   position: relative;
 }
+.step-1 .step-content {
+  width: 26.40625vw;
+  height: 16.562vw;
+}
+.step-2 .step-content {
+  width: 38.5156vw;
+  height: 13.984vw;
+}
+.step-3 .step-content {
+  width: 45.625vw;
+  height: 20vw;
+}
+.step-4 .step-content {
+  width: 48.515vw;
+  height: 16.797vw;
+}
+.step-5 .step-content {
+  width: 55.703vw;
+  height: 23.593vw;
+}
+.step-6 .step-content {
+  width: 67.5vw;
+  height: 8.75vw;
+}
+.step-7 .step-content {
+  width: 69.7656vw;
+  height: 25.7vw;
+}
+.step-8 .step-content {
+  width: 70.1vw;
+  height: 24.609vw;
+}
+.step-9 .step-content {
+  width: 74.453vw;
+  height: 19.6vw;
+}
+.step-10 .step-content {
+  width: 77.031vw;
+  height: 25.9375vw;
+}
+.step-11 .step-content {
+  width: 83.6718vw;
+  height: 15.234vw;
+}
+.step-12 .step-content {
+  width: 86.015vw;
+  height: 18.203vw;
+}
+
+.step-content::after {
+  position: absolute;
+  right: 1.5vw;
+  bottom: 1.5vw;
+  font-size: 5vw;
+  color: white;
+}
+.step-1 .step-content::after {
+  content: "1";
+}
+.step-2 .step-content::after {
+  content: "2";
+}
+.step-3 .step-content::after {
+  content: "3";
+}
+.step-4 .step-content::after {
+  content: "4";
+}
+.step-5 .step-content::after {
+  content: "5";
+}
+.step-6 .step-content::after {
+  content: "6";
+}
+.step-7 .step-content::after {
+  content: "7";
+}
+.step-8 .step-content::after {
+  content: "8";
+}
+.step-9 .step-content::after {
+  content: "9";
+}
+.step-10 .step-content::after {
+  content: "10";
+}
+.step-11 .step-content::after {
+  content: "11";
+}
+.step-12 .step-content::after {
+  content: "12";
+}
+
+.rectangle_1 {
+  width: 26.406vw;
+  height: 16.562vw;
+
+  /* border-width: 0.39vw;
+  outline-color: #cf00cf;
+  outline-style: solid; */
+  border: 0.39vw solid #cf00cf;
+  border-radius: 0.3125vw;
+  z-index: -1;
+}
+
+.rectangle_2 {
+  width: 38.5156vw;
+  height: 13.984vw;
+  border: 0.39vw solid #380038;
+  /* border-width: 0.39vw;
+  outline-color: #380038;
+  outline-style: solid; */
+  border-radius: 0.3125vw;
+  z-index: -1;
+}
+
+.rectangle_2 img {
+  width: 37.734vw;
+}
+
+.rectangle_3 {
+  /* width: 45.625vw;
+  height: 20vw; */
+  /* border-width: 0.39vw;
+  outline-color: #fff;
+  outline-style: solid; */
+  border: 0.39vw solid #fff;
+  border-radius: 0.3125vw;
+  z-index: -1;
+}
+
+.rectangle_3 img {
+  width: 16.328vw;
+}
+
+.rectangle_4 {
+  width: 48.515vw;
+  height: 16.797vw;
+  /* border-width: 0.39vw;
+  outline-color: #cf00cf;
+  outline-style: solid; */
+  border: 0.39vw solid #cf00cf;
+  border-radius: 0.3125vw;
+  background-color: #380038;
+  z-index: -1;
+}
+
+.rectangle_4 img {
+  width: 115.2164vw;
+}
+
+.rectangle_5 {
+  width: 55.703vw;
+  height: 23.593vw;
+  /* border-width: 0.39vw;
+  outline-color: #fff;
+  outline-style: solid; */
+  border: 0.39vw solid #fff;
+  border-radius: 0.3125vw;
+  z-index: -1;
+}
+
+.rectangle_6 {
+  width: 67.5vw;
+  height: 8.75vw;
+  /* border-width: 0.39vw;
+  outline-color: #380038;
+  outline-style: solid; */
+  border: 0.39vw solid #380038;
+  border-radius: 0.3125vw;
+  background-color: #cf00cf;
+  z-index: -1;
+}
+
+.rectangle_7 {
+  width: 69.7656vw;
+  height: 25.7vw;
+  /* border-width: 0.39vw;
+  outline-color: #fff;
+  outline-style: solid; */
+  border: 0.39vw solid #fff;
+  border-radius: 0.3125vw;
+  background-color: #380038;
+  z-index: -1;
+}
+
+.rectangle_8 {
+  width: 70.1vw;
+  height: 24.609vw;
+  /* border-width: 0.39vw;
+  outline-color: #380038;
+  outline-style: solid; */
+  border: 0.39vw solid #380038;
+  border-radius: 0.3125vw;
+  z-index: -1;
+}
+
+.rectangle_9 {
+  width: 74.453vw;
+  height: 19.6vw;
+  /* border-width: 0.39vw;
+  outline-color: #fff;
+  outline-style: solid; */
+  border: 0.39vw solid #fff;
+  border-radius: 0.3125vw;
+  z-index: -1;
+}
+
+.rectangle_10 {
+  width: 77.031vw;
+  height: 25.9375vw;
+  background-color: #fff;
+  /* border-width: 0.39vw;
+  outline-color: #cf00cf;
+  outline-style: solid; */
+  border: 0.39vw solid #cf00cf;
+  border-radius: 0.3125vw;
+  z-index: -1;
+}
+
+.rectangle_10 img {
+  width: 76.232vw;
+}
+
+.rectangle_11 {
+  width: 83.6718vw;
+  height: 15.234vw;
+  /* border-width: 0.39vw;
+  outline-color: #fff;
+  outline-style: solid; */
+  border: 0.39vw solid #fff;
+  border-radius: 0.3125vw;
+  background-color: #380038;
+  z-index: -1;
+}
+
+.rectangle_12 {
+  width: 86.015vw;
+  height: 18.203vw;
+  /* border-width: 0.39vw;
+  outline-color: #cf00cf;
+  outline-style: solid; */
+  border: 0.39vw solid #cf00cf;
+  border-radius: 0.3125vw;
+  z-index: -1;
+}
 
 /* для номерации ступенек */
-.number {
+
+/* .number-1 {
   position: absolute;
-  font-size: 75px;
-  font-family: Rammetto One;
-  font-weight: regular;
+  top: 2vw;
+  font-size: 5vw;
+  font-family: "Rammetto One";
+  font-weight: "regular";
   color: #cf00cf;
+} */
+
+.rectangle_1 img {
+  width: 60.594vw;
+  /* height: 14.039vw; */
+  /* margin: 1.4vw -2vw; */
 }
-.step h2 {
+/* .number-3 {
+  position: absolute;
+  top: 2vw;
+  font-size: 5vw;
+  font-family: "Rammetto One";
+  font-weight: "regular";
   color: #cf00cf;
-  font-size: 75px;
-}
+} */
 .start img {
+  margin-left: 4.2968vw;
+  margin-top: 2.734vw;
 }
 footer {
   color: #fff;
+}
+.footer-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle_13 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.497vw;
+  color: #fff;
+  width: 96.796vw;
+  /* border-width: 0.39vw;
+  outline-color: #380038;
+  outline-style: solid; */
+  border: 0.39vw solid #380038;
+  border-radius: 0.3125vw;
+  z-index: -1;
+  padding: 2vw;
+}
+.point-3 img {
+  display: inline;
+  width: 16.328vw;
+}
+.rectangle_13 img {
+  width: 12.89vw;
+}
+.rectangle_3 {
+  width: 45.625vw;
+  height: 20vw;
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-top: 1.171875vw;
+  padding-bottom: 1.171875vw;
+  padding-left: 1.406vw;
+  padding-right: 1.6406vw;
+  justify-content: center;
+  align-items: center; */
+}
+/* h2 {
+  text-align: center;
+} */
+.number_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle_6 {
+  width: 67.5vw;
+  height: 8.75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-top: 1.71875vw;
+  padding-bottom: 1.71875vw;
+  padding-left: 1.406vw;
+}
+.number_6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle_11 {
+  /* width: 83.6718vw;
+  height: 15.234vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-top: 1.71875vw;
+  padding-bottom: 1.71875vw;
+  padding-left: 1.406vw;
+  /* padding-right: 20px; */
+}
+h2,
+h3,
+h4 {
+  text-align: left;
+  width: 100%;
+}
+.number_11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.run-stroke-2 {
+  padding: 2vw 0;
+  overflow: hidden;
+  /* всё лишнее обрезает */
+  /* font-size: 3vw;
+  white-space: nowrap; */
+}
+.run-stroke-2 img {
+  width: 200%;
+  animation: marquee 6s infinite linear;
+}
+.run-stroke-2 p:hover {
+  animation-play-state: paused;
+}
+.run-stroke-1 {
+  padding: 1vw 0;
+  overflow: hidden;
+  /* всё лишнее обрезает */
+}
+.run-stroke-1 img {
+  width: 200%;
+  animation: marquee 3s infinite linear;
+}
+/* .run-stroke-1 p:hover {
+  animation-play-state: running;
+} */
+.result {
+  font-size: 5vw;
+  color: #fff;
+}
+.stars-end img {
+  width: 8.125vw;
+}
+
+.step_12 {
+  position: relative; /* Для позиционирования кадров */
+  width: 86.015vw; /* Ширина ступеньки (из вашей Figma, ориентируйтесь на макет) */
+  height: 18.203vw; /* Высота ступеньки (из вашей Figma, ориентируйтесь на макет) */
+  overflow: hidden; /* Скрываем кадры, выходящие за границы */
+}
+
+.frame {
+  position: absolute; /* Все кадры накладываются друг на друга */
+  top: 0;
+  left: 0vw;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Сначала все кадры невидимы */
+  animation: animateFrames 3s steps(5) infinite;
+}
+
+/*Указываем, какой фрейм за каким будет следовать*/
+.frame:nth-child(1) {
+  animation-delay: 0s;
+}
+.frame:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.frame:nth-child(3) {
+  animation-delay: 1.2s;
+}
+.frame:nth-child(4) {
+  animation-delay: 1.8s;
+}
+.frame:nth-child(5) {
+  animation-delay: 2.4s;
+}
+
+.step.12 {
+  width: 81.7187vw; /* Ширина одного кадра (ширина вашей картинки) */
+  overflow: hidden; /* Скрываем всё, что выходит за пределы */
+  position: relative; /* Важно для правильного позиционирования */
+}
+
+.frames-container {
+  display: flex; /* Выстраиваем кадры в ряд */
+  width: calc(81.7187vw * 5); /* Общая ширина всех кадров */
+  height: 100%;
+  animation: scrollFrames 2s steps(5) infinite; /* Анимация смещения */
+}
+
+.frame1 {
+  width: 86.015vw;
+  height: 100%;
+  flex-shrink: 0; /* Предотвращаем сжатие кадров */
+  object-fit: cover; /* Чтобы изображения масштабировались и не искажались */
 }
