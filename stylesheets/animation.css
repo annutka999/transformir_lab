@@ -7,26 +7,96 @@
   }
 }
 
-@keyframes animateFrames {
+@keyframes animateScale {
   0% {
     opacity: 1;
-  } /* Первый кадр видим в начале */
+  }
   20% {
     opacity: 1;
-  } /* Затем он исчезает */
+  }
   20.1% {
     opacity: 0;
   }
   100% {
     opacity: 0;
-  } /* Остальные кадры остаются невидимыми */
+  }
 }
 
 @keyframes scrollFrames {
   0% {
     transform: translateX(0);
-  } /* Начало - первый кадр виден */
+  }
   100% {
-    transform: translateX(calc(-1046px * 4));
-  } /* Конец - последний кадр слева */
+    transform: translateX(calc(-81.71875vw * 4));
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(2.4);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes pulse-0 {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes animateSpiral {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  33.1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animateCubes {
+  0% {
+    opacity: 1;
+  }
+
+  6.667% {
+    opacity: 1;
+  }
+  6.668% {
+    opacity: 0;
+  }
+  /* 99.999% {
+    opacity: 1;
+  } */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes switchStars {
+  0% {
+    opacity: 0;
+    z-index: 0;
+  }
+  50% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+  }
 }

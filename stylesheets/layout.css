@@ -14,10 +14,7 @@ header h1 {
   color: #cf00cf;
   text-align: center;
 }
-/* main section,
-header {
-  border: 0.2vw solid white;
-} */
+
 .header-content {
   display: flex;
   justify-content: center;
@@ -63,8 +60,28 @@ h4 {
 }
 .start img {
   width: 24.195vw;
-  height: 13.647vw;
+  /* display: block; */
 }
+
+.start {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.start:hover .hover-img {
+  opacity: 1;
+}
+
 .stars-first {
   width: 20.3125vw;
 }
@@ -74,11 +91,32 @@ h4 {
 .step-1 > div {
   width: 50%;
 }
+
 .step-1-right {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  position: relative;
 }
+
+.stars-first,
+.stars-first2 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 20vw;
+  animation: switchStars 1s infinite alternate;
+}
+
+.stars-first {
+  z-index: 1;
+}
+
+.stars-first2 {
+  animation-delay: 0.5s;
+}
+
 .step-content {
   position: relative;
 }
@@ -269,7 +307,7 @@ h4 {
 }
 
 .rectangle_8 {
-  width: 70.1vw;
+  width: 72.109vw;
   height: 24.609vw;
   /* border-width: 0.39vw;
   outline-color: #380038;
@@ -300,10 +338,29 @@ h4 {
   border: 0.39vw solid #cf00cf;
   border-radius: 0.3125vw;
   z-index: -1;
+  position: relative;
 }
 
-.rectangle_10 img {
+.step-10-background {
   width: 76.232vw;
+}
+
+.mini-star {
+  position: absolute;
+  width: 11.093vw;
+  top: 11.9vw;
+  left: 36.9vw;
+  z-index: 1;
+  animation: pulse-0 2s infinite ease-in-out;
+}
+
+.mini_star {
+  position: absolute;
+  width: 4.585vw;
+  top: 11.9vw;
+  left: 36.7vw;
+  z-index: 2;
+  animation: pulse 2s infinite ease-in-out;
 }
 
 .rectangle_11 {
@@ -328,8 +385,6 @@ h4 {
   border-radius: 0.3125vw;
   z-index: -1;
 }
-
-/* для номерации ступенек */
 
 /* .number-1 {
   position: absolute;
@@ -456,7 +511,7 @@ h4 {
 .run-stroke-2 {
   padding: 2vw 0;
   overflow: hidden;
-  /* всё лишнее обрезает */
+
   /* font-size: 3vw;
   white-space: nowrap; */
 }
@@ -470,7 +525,6 @@ h4 {
 .run-stroke-1 {
   padding: 1vw 0;
   overflow: hidden;
-  /* всё лишнее обрезает */
 }
 .run-stroke-1 img {
   width: 200%;
@@ -479,64 +533,299 @@ h4 {
 /* .run-stroke-1 p:hover {
   animation-play-state: running;
 } */
-.result {
+.result p {
   font-size: 5vw;
   color: #fff;
+  margin-top: 2vw;
 }
 .stars-end img {
   width: 8.125vw;
 }
 
 .step_12 {
-  position: relative; /* Для позиционирования кадров */
-  width: 86.015vw; /* Ширина ступеньки (из вашей Figma, ориентируйтесь на макет) */
-  height: 18.203vw; /* Высота ступеньки (из вашей Figma, ориентируйтесь на макет) */
-  overflow: hidden; /* Скрываем кадры, выходящие за границы */
+  position: relative;
+  width: 85.015vw;
+  height: 18.203vw;
+  overflow: hidden;
 }
 
-.frame {
-  position: absolute; /* Все кадры накладываются друг на друга */
+.scale {
+  position: absolute;
   top: 0;
-  left: 0vw;
+  left: 0.15vw;
   width: 100%;
   height: 100%;
-  opacity: 0; /* Сначала все кадры невидимы */
-  animation: animateFrames 3s steps(5) infinite;
+  opacity: 0;
+  animation: animateScale 3s steps(5) infinite;
 }
 
-/*Указываем, какой фрейм за каким будет следовать*/
-.frame:nth-child(1) {
+.scale:nth-child(1) {
   animation-delay: 0s;
 }
-.frame:nth-child(2) {
+.scale:nth-child(2) {
   animation-delay: 0.6s;
 }
-.frame:nth-child(3) {
+.scale:nth-child(3) {
   animation-delay: 1.2s;
 }
-.frame:nth-child(4) {
+.scale:nth-child(4) {
   animation-delay: 1.8s;
 }
-.frame:nth-child(5) {
+.scale:nth-child(5) {
   animation-delay: 2.4s;
 }
 
-.step.12 {
-  width: 81.7187vw; /* Ширина одного кадра (ширина вашей картинки) */
-  overflow: hidden; /* Скрываем всё, что выходит за пределы */
-  position: relative; /* Важно для правильного позиционирования */
+.ladder img {
+  width: 54.0625vw;
+  position: absolute;
+  top: 35vw;
+  left: 37.9296vw;
+  z-index: 1;
 }
 
-.frames-container {
-  display: flex; /* Выстраиваем кадры в ряд */
-  width: calc(81.7187vw * 5); /* Общая ширина всех кадров */
-  height: 100%;
-  animation: scrollFrames 2s steps(5) infinite; /* Анимация смещения */
+main {
+  position: relative;
 }
 
-.frame1 {
-  width: 86.015vw;
+/* .rectangle_5 {
+  display: flex;
+  overflow: hidden;
+  width: 55.703vw;
+}
+
+.circle-row {
+  display: flex;
+  flex-direction: row;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle-wrapper {
+  width: 4.375vw;
+  height: 3.90625vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  width: 3.90625vw;
+  height: 3.90625vw;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  border: 0.390625vw solid;
+  /* background-color: transparent; */
+/* }
+
+.circle.color1 {
+  border-color: #cf00cf;
+}
+
+.circle.color2 {
+  border-color: #380038;
+}
+
+.circle.color1:hover {
+  background-color: #380038;
+}
+
+.circle.color2:hover {
+  background-color: #cf00cf;
+} */
+
+/* .rectangle_5 {
+  display: flex;
+  overflow: hidden;
+  width: 55.703vw;
+}
+.circle-wrapper {
+  width: 4.375vw;
+  height: 3.90625vw;
+  position: relative;
+  overflow: hidden;
+}
+.circle {
+  width: 3.90625vw;
+  height: 3.90625vw;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transition: left 0.5s ease-in-out, background-color 0.3s ease;
+}
+
+.circle.color1 {
+  background-color: #cf00cf;
+}
+
+.circle.color2 {
+  background-color: #380038;
+}
+
+.circle.color1:hover {
+  background-color: #380038;
+}
+
+.circle.color2:hover {
+  background-color: #cf00cf;
+} */
+
+.rectangle_5 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.390625vw;
+
+  /* width: 100%;
+  justify-content: center;
+  align-items: center; */
+}
+
+.row {
+  display: flex;
+  gap: 0.546875vw;
+}
+
+.circle {
+  width: 3.90625vw;
+  height: 3.90625vw;
+  border: 0.390625vw solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.pink {
+  border-color: #cf00cf;
+}
+
+.burgundy {
+  border-color: #380038;
+}
+
+.pink:hover {
+  background-color: #380038;
+}
+
+.burgundy:hover {
+  background-color: #cf00cf;
+}
+
+.step_9 {
+  position: relative;
+  width: 73.453vw;
+  height: 19.6vw;
+  overflow: hidden;
+}
+
+.spiral {
+  position: absolute;
+  width: 100%;
   height: 100%;
-  flex-shrink: 0; /* Предотвращаем сжатие кадров */
-  object-fit: cover; /* Чтобы изображения масштабировались и не искажались */
+  opacity: 0;
+  animation: animateSpiral 1.8s steps(3) infinite;
+}
+
+.spiral:nth-child(1) {
+  animation-delay: 0s;
+}
+.spiral:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.spiral:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.step_8 {
+  position: relative;
+  width: 71.1vw;
+  height: 24.609vw;
+  overflow: hidden;
+}
+
+.cubes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: animateCubes 9s steps(15) infinite;
+}
+
+.cubes:nth-child(1) {
+  animation-delay: 0s;
+}
+.cubes:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.cubes:nth-child(3) {
+  animation-delay: 1.2s;
+}
+.cubes:nth-child(4) {
+  animation-delay: 1.8s;
+}
+.cubes:nth-child(5) {
+  animation-delay: 2.4s;
+}
+.cubes:nth-child(6) {
+  animation-delay: 3s;
+}
+.cubes:nth-child(7) {
+  animation-delay: 3.6s;
+}
+.cubes:nth-child(8) {
+  animation-delay: 4.2s;
+}
+.cubes:nth-child(9) {
+  animation-delay: 4.8s;
+}
+.cubes:nth-child(10) {
+  animation-delay: 5.4s;
+}
+.cubes:nth-child(11) {
+  animation-delay: 6s;
+}
+.cubes:nth-child(12) {
+  animation-delay: 6.6s;
+}
+.cubes:nth-child(13) {
+  animation-delay: 7.2s;
+}
+.cubes:nth-child(14) {
+  animation-delay: 7.8s;
+}
+.cubes:nth-child(15) {
+  animation-delay: 8.4s;
+}
+
+.step_7 {
+  width: 69.7656vw;
+  height: 25.7vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+}
+
+.left-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rotating-element {
+  width: 21.1719vw;
+  animation: rotate 2s linear infinite;
+}
+
+.static-element {
+  width: 27.578vw;
+}
+
+.highlight {
+  color: rgb(255, 255, 255);
 }

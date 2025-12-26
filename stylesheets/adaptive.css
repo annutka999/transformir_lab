@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  header {
+    padding: 2vw;
+  }
+  /* 
+  header h1 {
+    font-size: 7.159vw;
+  } */
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .rectangle-1 {
+    width: 98%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 14.3vw;
+  }
+
+  /* .rectangle-1 p {
+    white-space: normal;
+  } */
+
+  .highlight {
+    font-size: 1.108vw;
+  }
+  */ .header-images {
+    width: 48%;
+    margin: 0 auto;
+    top: 2.031vw;
+    left: 2.343vw;
+  }
+
+  .header-images img {
+    max-width: 100%;
+    height: auto;
+  }
+}
