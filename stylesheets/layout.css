@@ -24,7 +24,10 @@ header h1 {
 }
 .character-first {
   width: 8.906vw;
+  margin-left: 4vw;
+  margin-top: 2vw;
 }
+
 .header-images,
 .rectangle-1 {
   width: 47.656vw;
@@ -42,14 +45,6 @@ header h1 {
   line-height: 2.343vw;
   color: #cf00cf;
 }
-.header-images img {
-  width: 42.8125vw;
-  height: 17.2656vw;
-  margin: 0 auto;
-  position: relative;
-  top: 2.031vw;
-  left: 2.343vw;
-}
 h2,
 h3,
 h4 {
@@ -61,7 +56,6 @@ h4 {
 }
 .start img {
   width: 24.195vw;
-  /* display: block; */
 }
 
 .start {
@@ -229,10 +223,6 @@ h4 {
 .rectangle_1 {
   width: 26.406vw;
   height: 16.562vw;
-
-  /* border-width: 0.39vw;
-  outline-color: #cf00cf;
-  outline-style: solid; */
   border: 0.39vw solid #cf00cf;
   border-radius: 0.3125vw;
   z-index: -1;
@@ -242,9 +232,6 @@ h4 {
   width: 38.5156vw;
   height: 13.984vw;
   border: 0.39vw solid #380038;
-  /* border-width: 0.39vw;
-  outline-color: #380038;
-  outline-style: solid; */
   border-radius: 0.3125vw;
   z-index: -1;
 }
@@ -254,11 +241,6 @@ h4 {
 }
 
 .rectangle_3 {
-  /* width: 45.625vw;
-  height: 20vw; */
-  /* border-width: 0.39vw;
-  outline-color: #fff;
-  outline-style: solid; */
   border: 0.39vw solid #fff;
   border-radius: 0.3125vw;
   z-index: -1;
@@ -271,9 +253,6 @@ h4 {
 .rectangle_4 {
   width: 48.515vw;
   height: 16.797vw;
-  /* border-width: 0.39vw;
-  outline-color: #cf00cf;
-  outline-style: solid; */
   border: 0.39vw solid #cf00cf;
   border-radius: 0.3125vw;
   background-color: #380038;
@@ -287,9 +266,6 @@ h4 {
 .rectangle_5 {
   width: 55.703vw;
   height: 23.593vw;
-  /* border-width: 0.39vw;
-  outline-color: #fff;
-  outline-style: solid; */
   border: 0.39vw solid #fff;
   border-radius: 0.3125vw;
   z-index: -1;
@@ -298,9 +274,6 @@ h4 {
 .rectangle_6 {
   width: 67.5vw;
   height: 8.75vw;
-  /* border-width: 0.39vw;
-  outline-color: #380038;
-  outline-style: solid; */
   border: 0.39vw solid #380038;
   border-radius: 0.3125vw;
   background-color: #cf00cf;
@@ -310,16 +283,12 @@ h4 {
 .rectangle_7 {
   width: 69.7656vw;
   height: 25.7vw;
-  /* border-width: 0.39vw;
-  outline-color: #fff;
-  outline-style: solid; */
   border: 0.39vw solid #fff;
   border-radius: 0.3125vw;
   background-color: #380038;
   z-index: -1;
   display: flex;
   box-sizing: border-box;
-  /* padding-left: 5vw; */
   align-items: center;
   justify-content: space-between;
 }
@@ -327,9 +296,6 @@ h4 {
 .rectangle_8 {
   width: 72.109vw;
   height: 24.609vw;
-  /* border-width: 0.39vw;
-  outline-color: #380038;
-  outline-style: solid; */
   border: 0.39vw solid #380038;
   border-radius: 0.3125vw;
   z-index: -1;
@@ -338,9 +304,6 @@ h4 {
 .rectangle_9 {
   width: 74.453vw;
   height: 19.6vw;
-  /* border-width: 0.39vw;
-  outline-color: #fff;
-  outline-style: solid; */
   border: 0.39vw solid #fff;
   border-radius: 0.3125vw;
   z-index: -1;
@@ -350,9 +313,6 @@ h4 {
   width: 77.031vw;
   height: 25.9375vw;
   background-color: #fff;
-  /* border-width: 0.39vw;
-  outline-color: #cf00cf;
-  outline-style: solid; */
   border: 0.39vw solid #cf00cf;
   border-radius: 0.3125vw;
   z-index: -1;
@@ -384,9 +344,6 @@ h4 {
 .rectangle_11 {
   width: 83.6718vw;
   height: 15.234vw;
-  /* border-width: 0.39vw;
-  outline-color: #fff;
-  outline-style: solid; */
   border: 0.39vw solid #fff;
   border-radius: 0.3125vw;
   background-color: #380038;
@@ -396,36 +353,16 @@ h4 {
 .rectangle_12 {
   width: 86.015vw;
   height: 18.203vw;
-  /* border-width: 0.39vw;
-  outline-color: #cf00cf;
-  outline-style: solid; */
+
   border: 0.39vw solid #cf00cf;
   border-radius: 0.3125vw;
   z-index: -1;
 }
 
-/* .number-1 {
-  position: absolute;
-  top: 2vw;
-  font-size: 5vw;
-  font-family: "Rammetto One";
-  font-weight: "regular";
-  color: #cf00cf;
-} */
-
 .rectangle_1 img {
   width: 60.594vw;
-  /* height: 14.039vw; */
-  /* margin: 1.4vw -2vw; */
 }
-/* .number-3 {
-  position: absolute;
-  top: 2vw;
-  font-size: 5vw;
-  font-family: "Rammetto One";
-  font-weight: "regular";
-  color: #cf00cf;
-} */
+
 .start img {
   margin-left: 4vw;
   margin-top: -0.5vw;
@@ -464,20 +401,8 @@ footer {
   width: 45.625vw;
   height: 20vw;
   display: flex;
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  box-sizing: border-box;
-  padding-top: 1.171875vw;
-  padding-bottom: 1.171875vw;
-  padding-left: 1.406vw;
-  padding-right: 1.6406vw;
-  justify-content: center;
-  align-items: center; */
 }
-/* h2 {
-  text-align: center;
-} */
+
 .number_3 {
   display: flex;
   justify-content: center;
@@ -501,8 +426,6 @@ footer {
   align-items: center;
 }
 .rectangle_11 {
-  /* width: 83.6718vw;
-  height: 15.234vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -511,7 +434,6 @@ footer {
   padding-top: 1.71875vw;
   padding-bottom: 1.71875vw;
   padding-left: 1.406vw;
-  /* padding-right: 20px; */
 }
 h2,
 h3,
@@ -528,9 +450,6 @@ h4 {
 .run-stroke-2 {
   padding: 2vw 0;
   overflow: hidden;
-
-  /* font-size: 3vw;
-  white-space: nowrap; */
 }
 .run-stroke-2 img {
   width: 200%;
@@ -572,8 +491,6 @@ h4 {
   grid-row: 1;
 }
 .stars-end img {
-  /* width: 8.125vw; */
-  /* margin: 4vw 20vw; */
   animation: stars-end 4s steps(4) infinite;
 }
 .stars-end img:nth-child(1) {
@@ -647,10 +564,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5vw;
-
-  /* width: 100%;
-  justify-content: center;
-  align-items: center; */
 }
 
 .row {
@@ -769,24 +682,6 @@ main {
   animation-delay: 8.4s;
 }
 
-/* .step_7 {
-  width: 69.7656vw;
-  height: 25.7vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2vw;
-}
-
-.rotating-element {
-  width: 21.1719vw;
-  animation: rotate 2s linear infinite;
-}
-
-.static-element {
-  width: 27.578vw;
-} */
-
 .highlight {
   color: rgb(255, 255, 255);
 }
@@ -806,12 +701,6 @@ main {
   align-items: center;
 }
 
-/* .image-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .rotating-element {
   width: 100%;
   height: 100%;
@@ -835,76 +724,51 @@ main {
 }
 
 .header-images {
-  display: flex; /*  контейнер для выравнивания по горизонтали */
-  justify-content: center; /* Выравнивание элементов по центру */
-  align-items: center; /* Вертикальное выравнивание по центру */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.battery-container {
-  display: flex; /*  контейнер батареек */
-  align-items: center; /*  элементы по вертикали */
-  justify-content: center; /*  по гориз*/
-  /* можно добавить margin, чтобы задать отступ от родительского элемента .header-images */
-  /* gap: 20px;  между элементами.  */
+.battery-animation {
+  width: 100%;
+  height: 17.2578vw;
+  position: relative;
+  margin: 0 auto;
 }
+
 .battery {
-  width: 11.719vw; /* за ширину */
-  height: 13.906vw; /* за высоту */
-  position: relative; /* Контекст для наложения кадров друг на друга */
+  animation: battery-animation 2.5s steps(1, end) infinite;
 }
 
-/*стили для battery слева и справа*/
-.battery-left,
-.battery-right {
-  width: 5.29vw; /* задаем ширину */
-  height: 7.29vw; /* задаем высоту для батар */
-}
-/*  кадры чтоб накладались один на на другой*/
-.battery-frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0; /* Скрываем все кадры */
-  animation: batteryAnimation 1.5s steps(1) infinite; /* steps указывает, чтоб анимация была покадровой*/
-}
-/*чтоб кадра аним с нужн задерж*/
-.battery-frame[data-frame="1"] {
+/* .header-images img {
+  width: 42.8125vw;
+  height: 17.2656vw;
+  margin: 0 auto;
+  position: relative;
+  top: 2.031vw;
+  left: 2.343vw;
+} */
+.battery:nth-child(1) {
   animation-delay: 0s;
 }
-
-.battery-frame[data-frame="2"] {
-  animation-delay: 0.5s; /* задержка */
-}
-.battery-frame[data-frame="3"] {
-  animation-delay: 1s; /* задержка */
-}
-
-/*средняя часть*/
-.energy-lines {
-  width: 7.29vw;
-  height: 3.59vw;
-}
-/*среднюю часть тоже накладываем один на одного*/
-.energy-line-frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0; /* Скрываем все кадры */
-  animation: middleAnimation 1.5s steps(1) infinite; /* steps указывает, чтоб анимация была покадровой*/
-  height: 3.59vw;
-}
-/*  кадрам среднию задержку */
-.energy-line-frame[data-frame="1"] {
-  animation-delay: 0s;
-}
-
-.energy-line-frame[data-frame="2"] {
+.battery:nth-child(2) {
   animation-delay: 0.5s;
 }
-.energy-line-frame[data-frame="3"] {
+.battery:nth-child(3) {
   animation-delay: 1s;
+}
+.battery:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.battery:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.header-images img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }

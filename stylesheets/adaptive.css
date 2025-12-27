@@ -2,10 +2,6 @@
   header {
     padding: 2vw;
   }
-  /* 
-  header h1 {
-    font-size: 7.159vw;
-  } */
 
   .header-content {
     flex-direction: column;
@@ -42,41 +38,6 @@
   .ladder {
     display: none;
   }
-  /* .step-content,
-  .rectangle-1,
-  .run-stroke_1,
-  .run-stroke_1 img {
-    width: 100%;
-  } */
-  /* .run-stroke_1 img {
-    width: 100%;
-    height: auto;
-  }
-  .rectangle-1 {
-    width: 100%;
-    height: auto;
-  }
-  .run-stroke_1 {
-    width: 100%;
-    height: auto;
-  }
-  .step,
-  .step-1 {
-    width: 100%;
-    height: auto;
-  }
-  .step-2 {
-    width: 100%;
-    height: auto;
-  }
-  .rectangle-2 {
-    width: 100%;
-    height: auto;
-  }
-  .rectangle-2 img {
-    width: 100%;
-    height: auto;
-  } */
 
   .step {
     width: 100%;
@@ -92,13 +53,11 @@
   .step,
   .step-1 {
     width: 100%;
-    height: auto;
   }
 
   .rectangle-2,
   .rectangle-2 img,
   .step-2 {
     width: 100%;
-    height: auto;
   }
 }
