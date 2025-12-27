@@ -9,21 +9,22 @@
 
   .header-content {
     flex-direction: column;
+    align-items: end;
   }
 
   .rectangle-1 {
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     height: 14.3vw;
   }
 
-  /* .rectangle-1 p {
-    white-space: normal;
-  } */
+  .rectangle-1 p {
+    width: 96%;
+  }
 
   .highlight {
-    font-size: 1.108vw;
+    font-size: 1.8vw;
   }
   */ .header-images {
     width: 48%;
@@ -34,6 +35,70 @@
 
   .header-images img {
     max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 320px) {
+  .ladder {
+    display: none;
+  }
+  /* .step-content,
+  .rectangle-1,
+  .run-stroke_1,
+  .run-stroke_1 img {
+    width: 100%;
+  } */
+  /* .run-stroke_1 img {
+    width: 100%;
+    height: auto;
+  }
+  .rectangle-1 {
+    width: 100%;
+    height: auto;
+  }
+  .run-stroke_1 {
+    width: 100%;
+    height: auto;
+  }
+  .step,
+  .step-1 {
+    width: 100%;
+    height: auto;
+  }
+  .step-2 {
+    width: 100%;
+    height: auto;
+  }
+  .rectangle-2 {
+    width: 100%;
+    height: auto;
+  }
+  .rectangle-2 img {
+    width: 100%;
+    height: auto;
+  } */
+
+  .step {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+  }
+
+  .run-stroke_1 img,
+  .rectangle-1,
+  .run-stroke_1,
+  .step,
+  .step-1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .rectangle-2,
+  .rectangle-2 img,
+  .step-2 {
+    width: 100%;
     height: auto;
   }
 }

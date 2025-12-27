@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="icon" href="images/favicon.i.ico" type="images/x-icon" />
     <link rel="icon" href="images/favicon.i.ico" type="images/png" />
+    <meta property="og:type" content="web-site" />
+    <meta property="og:title" content="TRANSFORMIR" />
+    <meta
+      property="og:description"
+      content="адвент-календарь как путь трансформации в звёздной лаборатории ТРАНСФОРМИР"
+    />
+    <meta property="og:image" content="" />
   </head>
   <body>
     <header>
@@ -29,7 +36,65 @@
         </div>
 
         <div class="header-images">
-          <img src="images/energy.svg" alt="Batteries" />
+          <div class="battery-container">
+            <div class="battery battery-left">
+              <img
+                src="images/left-battery1.svg"
+                alt="left-battery"
+                class="battery-frame"
+                data-frame="1"
+              />
+              <img
+                src="images/left-battery2.svg"
+                alt="left-battery"
+                class="battery-frame"
+                data-frame="2"
+              />
+              <img
+                src="images/left-battery3.svg"
+                alt="left-battery"
+                class="battery-frame"
+                data-frame="3"
+              />
+              <img
+                src="images/left-battery4.svg"
+                alt="left-battery"
+                class="battery-frame"
+                data-frame="4"
+              />
+              <img
+                src="images/left-battery5.svg"
+                alt="left-battery"
+                class="battery-frame"
+                data-frame="5"
+              />
+              <!-- Добавь остальные кадры для левой батарейки -->
+            </div>
+
+            <div class="energy-lines">
+              <img
+                src="images/energy1.svg"
+                alt="energy"
+                class="energy-line-frame"
+                data-frame="1"
+              />
+              <img
+                src="images/energy2.svg"
+                alt="energy"
+                class="energy-line-frame"
+                data-frame="2"
+              />
+            </div>
+
+            <div class="battery battery-right">
+              <img
+                src="images/right-battery.svg"
+                alt="right-battery"
+                class="battery-frame"
+                data-frame="1"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -45,7 +110,7 @@
           <div class="start">
             <img src="images/start.svg" alt="START" />
             <img
-              src="images/start-white.svg"
+              src="images/start_white.svg"
               alt="START-white"
               class="hover-img"
             />
@@ -198,29 +263,38 @@
       <section class="step step-7">
         <div class="step-content">
           <div class="rectangle_7">
-            <div class="step_7">
-              <div class="left-elements">
+            <div class="left-column">
+              <div class="rotating">
                 <img
                   src="images/7_white.svg"
-                  alt="white element"
+                  alt="7 white"
                   class="rotating-element"
                 />
+              </div>
+              <img
+                src="images/7_black.svg"
+                alt="7 black"
+                class="static-element"
+              />
+            </div>
+
+            <div class="dashed-lines">
+              <img src="images/7_lines.svg" alt="dashed_lines" />
+            </div>
+
+            <div class="right-column">
+              <div class="rotating">
                 <img
-                  src="images/7_black.svg"
-                  alt="black element"
-                  class="static-element"
-                />
-                <img
-                  src="images/7_pink.svg"
-                  alt="pink element"
-                  class="static-element"
+                  src="images/7_white.svg"
+                  alt="7 white"
+                  class="rotating-element"
                 />
               </div>
-              <div class="central-dashed-lines">
-                <div class="dashed-line"></div>
-                <div class="dashed-line"></div>
-                <div class="dashed-line"></div>
-              </div>
+              <img
+                src="images/7_pink.svg"
+                alt="7 pink"
+                class="static-element"
+              />
             </div>
           </div>
         </div>
@@ -315,7 +389,10 @@
       <section>
         <div class="result"><p>TRANSFORMATION COMPLETE</p></div>
         <div class="stars-end">
-          <img src="images/stars-end.svg" alt="stars-end" />
+          <img src="images/stars-end.svg" alt="stars-end" class="star" />
+          <img src="images/stars-end-2.svg" alt="stars-end" class="star" />
+          <img src="images/stars-end-3.svg" alt="stars-end" class="star" />
+          <img src="images/stars-end-4.svg" alt="stars-end" class="star" />
         </div>
       </section>
     </main>
